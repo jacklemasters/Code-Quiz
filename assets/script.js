@@ -53,7 +53,7 @@ var questions = [{
             clearInterval(timerInterval);
             cardQuestions.setAttribute("style", "display: none");
             displayJumbo.setAttribute("style", "display: block");
-            yourScore.textContent = "Your score is: " + secondsLeft;
+            yourScore.textContent = "Your current score is: " + secondsLeft;
             startButton.setAttribute("style", "display: none");
             submitButton.setAttribute("style", "display: inline");
             inputLine.setAttribute("style", "display: inline-block");
@@ -63,7 +63,7 @@ var questions = [{
                 console.log(secondsLeft);
                 cardQuestions.setAttribute("style", "display: none");
                 displayJumbo.setAttribute("style", "display: block");
-                yourScore.textContent = "Your score is: " + secondsLeft;
+                yourScore.textContent = "Your score current is: " + secondsLeft;
                 startButton.setAttribute("style", "display: none");
                 submitButton.setAttribute("style", "display: inline");
                 inputLine.setAttribute("style", "display: inline-block");
@@ -84,7 +84,7 @@ var questions = [{
     function startGame() {
         setTime();
         firstQuestion();
-        console.log("game on");
+        console.log("game on!");
         cardQuestions.setAttribute("style", "display: block");
         displayJumbo.setAttribute("style", "display: none");
 
@@ -117,15 +117,15 @@ var questions = [{
     quizBtn[i].addEventListener("click", function userAnswer(event) {
         event.stopPropagation();
         if (event.currentTarget.innerText === questions[runningQuestion].correct){
-        correctAnswer.textContent = "Correct + 5 sec";
+        correctAnswer.textContent = "Correct! + 5 sec";
         correctAnswer.setAttribute("style", "color: yellow");
         secondsLeft = secondsLeft + 5;
-        console.log("correct");
+        console.log("correct!");
     } else {
-        incorrectAnswer.textContent = "Incorrect - 5 sec";
+        incorrectAnswer.textContent = "Incorrect! - 5 sec";
         incorrectAnswer.setAttribute("style", "color: red");
         secondsLeft = secondsLeft - 5;
-        console.log("Incorrect minus 5 seconds");
+        console.log("Incorrect! minus 5 seconds");
     }
     console.log(runningQuestion);
     runningQuestion++;
