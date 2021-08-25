@@ -7,9 +7,7 @@ A quiz created with Javascript, with the purpose of testing individuals learning
 - [Description](#Description)
 - [Installation](#Installation)
 - [Usage](#Usage)
-- [Licence](#Licence)
 - [Contributors](#Contributors)
-- [Test](#Test)
 - [Repository Link](#Repository)
 - [GitHub Info](#GitHub) 
 ## Installation
